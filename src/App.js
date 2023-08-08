@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const Hello = ()=>{
+    let batchName =  "UnStopable"
+
+    let styleObj = {color: "red",textAlign: "center"}
+
+    return (
+        <div className="section" >
+            <h1 style= {styleObj} > Hello World</h1> 
+            <p> Welcome to the class. - {batchName}</p>
+            {/* curely braces can access JS elements */}
+
+            <p> {styleObj.color} </p>
+           
+            
+        </div>
+    )
 }
-
-export default App;
